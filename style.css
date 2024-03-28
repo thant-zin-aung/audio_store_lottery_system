@@ -1,0 +1,283 @@
+*,html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    background-image: url('https://www.svconline.com/wp-content/uploads/2019/04/64-audio-a2e-in-ear-monitor-2018hr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.main-wrapper,
+.second-main-wrapper {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(40px);
+    backdrop-filter: brightness(10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .main-wrapper {
+    display: none;
+} */
+.second-main-wrapper {
+    display: none;
+}
+.title {
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.title span {
+    border-bottom: 2px solid white;
+}
+.sub-title {
+    font-size: 14px;
+    font-weight: lighter;
+    width: 700px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.5em;
+}
+.lucky-box-wrapper {
+    width: 600px;
+    height: auto;
+    /* background-color: red; */
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lucky-box-wrapper .lucky-box {
+    margin: 0.5%;
+    width: 23%;
+    height: 120px;
+    /* background-color: #EEEEEE; */
+    border: 1px solid transparent;
+    /* box-shadow: 1px 1px 16px 1px #EAEAEA; */
+    box-shadow: 1px 1px 16px 1px white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+.lucky-box-wrapper .lucky-box span {
+    font-size: 20px;
+    color: #A0A0A0;
+    padding: 20px;
+    border: 3px solid #EAEAEA;
+    border-radius: 100%;
+    transform: rotate(-15deg);
+}
+.submit-wrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.submit-wrapper form {
+    width: 600px;
+}
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.submit-button:hover {
+    box-shadow: 1px 1px 16px 1px #EAEAEA;
+}
+
+
+
+.second-main-wrapper .congrat-wrapper {
+    color: black;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.second-main-wrapper .congrat-wrapper .product-name {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.second-main-wrapper .congrat-wrapper .product-image {
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+}
+
+.second-main-wrapper .congrat-wrapper .congrat-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.second-main-wrapper .congrat-wrapper .outro {
+    font-size: 13px;
+    text-align: center;
+    opacity: 0.8;
+}
+.second-main-wrapper .congrat-wrapper a {
+    width: 90%;
+    height: 45px;
+}
+.second-main-wrapper .congrat-wrapper .ok-button {
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .main-wrapper .title {
+        font-size: 30px;
+    }
+    .sub-title {
+        font-size: 13px;
+        width: 500px;
+    }
+    .submit-wrapper form {
+        width: 450px !important;
+        height: 45px !important;
+    }
+    .try-your-luck-button {
+        /* width: 250px; */
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+    .lucky-box-wrapper {
+        width: 500px;
+        /* margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap; */
+    }
+    .lucky-box-wrapper .lucky-box {
+        margin: 0.3%;
+        width: 23%;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .main-wrapper .title {
+        font-size: 25px;
+    }
+    .sub-title {
+        font-size: 12px;
+        width: 350px;
+        line-height: 1.4em;
+        
+    }
+    .submit-wrapper form {
+        margin-top: 70px !important;
+        width: 350px !important;
+        height: 40px !important;
+    }
+    .submit-wrapper form input[type=text] {
+        font-size: 14px;
+    }
+    .submit-wrapper .submit-button {
+        font-size: 15px;
+    }
+    .try-your-luck-button {
+        /* width: 250px; */
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+    .lucky-box-wrapper {
+        width: 400px;
+        /* margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap; */
+    }
+    .lucky-box-wrapper .lucky-box {
+        margin: 0.3%;
+        width: 23%;
+        height: 85px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main-wrapper .title {
+        font-size: 20px;
+    }
+    .sub-title {
+        font-size: 11px;
+        width: 270px;
+        line-height: 1.4em;
+        
+    }
+    .submit-wrapper form {
+        margin-top: 70px !important;
+        width: 300px !important;
+        height: 35px !important;
+    }
+    .submit-wrapper form input[type=text] {
+        font-size: 14px;
+    }
+    .submit-wrapper .submit-button {
+        font-size: 13px;
+    }
+    .try-your-luck-button {
+        /* width: 250px; */
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+    .lucky-box-wrapper {
+        width: 300px;
+        /* margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap; */
+    }
+    .lucky-box-wrapper .lucky-box {
+        margin: 0.3%;
+        width: 23%;
+        height: 65px;
+    }
+
+    .second-main-wrapper .congrat-wrapper {
+        width: 350px;
+    }
+    .second-main-wrapper .congrat-wrapper .product-name {
+        font-size: 30px;
+    }
+    .second-main-wrapper .congrat-wrapper {
+        font-size: 22px;
+    }
+    .second-main-wrapper .congrat-wrapper .outro {
+        font-size: 12px;
+    }
+}
